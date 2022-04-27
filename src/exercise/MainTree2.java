@@ -6,11 +6,11 @@ public class MainTree2 {
         Tree2 abt = new Tree2();
 
         //add data to the binary search tree
-        for(int p=0;p<data.length;p++) {
+        for (int datum : data) {
             if (abt.isEmpty()) {
-                abt.addRoot(data[p]);
+                abt.addRoot(datum);
             } else {
-                abt.addChild(0, data[p]);
+                abt.addChild(0, datum);
             }
         }
 

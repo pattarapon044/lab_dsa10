@@ -15,6 +15,7 @@ public class Tree {
         Arrays.fill(T, -1);
     }
 
+    @SuppressWarnings("unused")
     public Tree(int tSize) {
         T = new int[tSize];
         // fill array with -1
@@ -84,9 +85,9 @@ public class Tree {
     // print all nodes' elements (Breadth-First)
     public void printAllElements() {
         System.out.print("\nAll elements are :");
-        for (int i = 0; i < T.length; i++) {
-            if (T[i] > -1){ // Check p is has a value a not
-                System.out.print(T[i] + " "); // Then just print its value if it has a value
+        for (int node : T) {
+            if (node > -1) { // Check p is has a value a not
+                System.out.print(node + " "); // Then just print its value if it has a value
             }
         }
         System.out.println();
